@@ -48,6 +48,9 @@ const CommentBox = ({
               type:"error",
               message:"Something wen't wrong"
            });
+            setValue('name', '');
+            setValue('comment' , '');
+            setValue('email', '');
            return err;
         }
     }
