@@ -32,6 +32,7 @@ const page = () => {
 
     useEffect(() => {
        fetchPost();
+       document.title = "Wendi | " + params.slug;
     },[])
 
     return (

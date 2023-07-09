@@ -1,16 +1,10 @@
 "use client" 
-import { getAllCategories } from "@/services/category";
-import { ICategory } from "@/interfaces/category.interface";
 import { useState,useEffect } from "react";
 import { IPostResponse } from '@/interfaces/post.interface';
 import { getAllPosts } from '@/services/post';
-import { PostCard,Banner, RightSection, PostCardSkeleton } from "@/components";
-import Link from "next/link";
+import { PostCard,Banner, RightSection, PostCardSkeleton,HeadSeo } from "@/components";
 import useDarkmode from "@/hooks/useDarkmode";
 
-export const metadata = {
-  title:"Wendi | Home"
-}
 
 const Home = () => { 
 
@@ -30,10 +24,12 @@ const Home = () => {
 
   useEffect(()=>{
      fetchData();
+     document.title = "Wendi | Home";
   },[]);
 
   return (
      <div className="w-full flex-1 dark:bg-gray-900">
+      <HeadSeo title="Wendi | Home" />
       <Banner/>
        <section className="py-10 sm:w-full sm:px-5 w-[80%] mx-auto">
            <div className="w-full">

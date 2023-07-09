@@ -5,6 +5,7 @@ import Banner from "./Banner";
 import RightSection from "./RightSection";
 import AuthorBox from "./AuthorBox";
 import PostCardSkeleton from "./PostCardSkeleton";
+import HeadSeo from "./HeadSeo";
 import CommentBox from "./CommentBox";
 
 export {
@@ -15,5 +16,6 @@ export {
     RightSection,
     AuthorBox,
     PostCardSkeleton,
-    CommentBox
+    CommentBox,
+    HeadSeo
 }

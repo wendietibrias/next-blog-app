@@ -23,6 +23,7 @@ const page = () => {
 
     useEffect(() => {
         fetchPostByCategory();
+        document.title = "Wendi | Category";
     }, []);
 
     return (
